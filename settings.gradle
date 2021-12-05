@@ -1,2 +1,24 @@
+include ':net-protocol'
 include ':app'
+include ':net'
 rootProject.name = "fw-net"
+
+buildscript {
+
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
+        }
+        mavenCentral()
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+
+    dependencies {
+        classpath "cn.wzbos.android:chihiro-plugin:1.0.8"
+    }
+}
+
+apply plugin: 'chihiro-settings'

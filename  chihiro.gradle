@@ -1,0 +1,23 @@
+
+chihiro {
+    log = true      //打印调式日志
+    maven = true    //开启Maven上传功能
+    //微信机器人
+//    wechat {
+//        url "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=微信机器人key"
+//    }
+    //钉钉机器人
+    dingtalk {
+        url "https://oapi.dingtalk.com/robot/send?access_token=12fcb8386336e3fe852dba81553cef69039a541c87e10ad229c0aed0b995580f"
+        secret "SECc385adebc7d1e887cdde6f1896e0116473c447d09f4bb72fd55627b48c36f4a2"
+    }
+
+    //自定义webhook，详见高级功能说明
+//    webhook {
+//        url "https://xxx.com/api"
+//    }
+
+    projects = [
+
+    ]
+}
