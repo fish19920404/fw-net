@@ -27,11 +27,11 @@ buildscript {
     }
 
     repositories {
-        google()
         maven {
             url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
         mavenCentral()
+        google()
         jcenter()
     }
     dependencies {
@@ -41,7 +41,7 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
         classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
-        classpath "cn.wzbos.android:chihiro-plugin:1.0.8"
+        classpath "cn.wzbos.android:chihiro-plugin:1.0.9"
     }
 }
 
@@ -50,8 +50,8 @@ allprojects {
         maven {
             url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
-        google()
         mavenCentral()
+        google()
         jcenter()
     }
 
